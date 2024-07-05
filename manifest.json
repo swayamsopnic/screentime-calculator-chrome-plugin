@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "ScreenTime Counter",
+  "version": "1.0",
+  "description": "It helps you see that for how much time you are on a website.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
